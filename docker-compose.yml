@@ -8,13 +8,14 @@ services:
     ports:
       - "4000:4000"
     depends_on:
-      - db
-  db:
+      - database
+  database:
     image: postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      PGDATA: /var/lib/postgresql/data/pgdata
-    restart: always
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
