@@ -12,7 +12,8 @@ RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
     nodejs \
     postgresql-client
 RUN mix local.hex --force && \
-    mix archive.install hex phx_new --force
+    mix archive.install hex phx_new --force && \
+    mix local.rebar --force
 
 ENV APP_HOME /usr/src/app
 RUN mkdir $APP_HOME
