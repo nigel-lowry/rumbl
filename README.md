@@ -21,7 +21,7 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 1. `mix ecto.migrate`
 1. `mix run priv/repo/seeds.exs`
 1. `mix test`
-1. `open localhost:4000`
+1. `open http://localhost:4000`
 
 ## Learn more
 
