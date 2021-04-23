@@ -16,10 +16,12 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 1. `docker-compose up -d`
 1. `alias mix="docker-compose run --rm web mix"`
 1. `alias iex="docker-compose run --rm web iex -S mix"`
+1. `mix deps.get`
 1. `mix ecto.create`
 1. `mix ecto.migrate`
 1. `mix run priv/repo/seeds.exs`
 1. `mix test`
+1. `open localhost:4000`
 
 ## Learn more
 
