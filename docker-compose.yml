@@ -10,7 +10,7 @@ services:
     depends_on:
       - database
   database:
-    image: postgres
+    image: arm64v8/postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
